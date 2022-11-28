@@ -8,8 +8,8 @@ import { Gamerouter } from "./GameRouter";
 
 const app = express();
 const port = 3000;
-const templates_location = path.resolve(__dirname, "../dist/templates");
-const client_location = path.resolve(__dirname, "../dist/client");
+const templates_location = path.resolve(__dirname, "../templates");
+const client_location = path.resolve(__dirname, "../client");
 
 app.use(express.json());
 app.use(
