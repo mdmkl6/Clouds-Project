@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rooms Game</title>
+        <script src="./client.js" type="application/javascript"></script>
+        <style>
+            .door {float: left; padding: 100; text-align: center;}
+            .input {float: left; padding: 100;}
+            .message {float: left; padding: 100; text-align: center; width:250px; height:300px; inline-size: 250px; overflow-wrap: break-word;}
+            </style>
+    </head>
+    <body>
+        <div>
+            <div class = "input">
+                <p>Name:</p>
+                <input id="newroomname" type="text" name="name" placeholder="New room name" required><br><br>
+                <input id="create_room_btn" type="button" value="Create Room"> 
+            </div>
+            <div class = "input">
+                <p>Message:</p>
+                <input id="newmessage" type="text" name="message" placeholder="Message" required><br><br>
+                <input id="create_message_btn" type="button" value="Create Message"> 
+            </div>
+            <h1 style="margin: 1000;"><a href="/auth/logout">Logout</a></h1>
+            <h1 id="info"></h1>
+            <h1 style="margin: 1000;", id = "roomname"></h1>
+        </div>
+        
+        <div id="doors"> 
+            <p class="message"></p>
+        </div>
+    </body>
+</html>
