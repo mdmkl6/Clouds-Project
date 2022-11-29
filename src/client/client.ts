@@ -100,7 +100,7 @@ function create_dors(room: RoomMap): void {
     room.messages.forEach((message: Message) => {
       const div = document.createElement("div");
       div.classList.add("message");
-      div.innerHTML = `<p class="message">${message.message}</p>`;
+      div.innerHTML = `<p>${message.message}</p>`;
       doors_div.appendChild(div);
     });
   }

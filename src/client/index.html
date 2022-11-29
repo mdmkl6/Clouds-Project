@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Rooms Game</title>
+        <title>World of Dors</title>
         <script src="./client.js" type="application/javascript"></script>
         <style>
-            .door {float: left; padding: 10px; text-align: center;}
-            .input {float: left; padding: 10px;}
-            .message {float: left; padding: 10px; text-align: center; width:250px; height:380px; inline-size: 250px; overflow-wrap: break-word;}
+            .input {float: left; margin: 5px; padding: 15px; border: 5px solid rgb(0, 0, 0); border-radius: 20px;}
+            .info {clear:both; margin: 5px; padding: 5px; border: 5px solid rgb(0, 0, 0); border-radius: 20px;}
+            .door {float: left; margin: 5px; padding: 10px; text-align: center;}
+            .message {float: left; margin: 5px; padding: 5px; text-align: center; width:250px; height:380px; max-height: 400px; inline-size: 250px; overflow-wrap: break-word; border: 5px solid rgb(104, 48, 0); border-radius: 20px; background-color: rgb(203, 227, 228);}
             </style>
     </head>
     <body>
         <div>
+            <div class = "info">
+                <h1 style="margin: 10px; float: left;", id = "roomname"></h1>
+                <h1 style="margin: 10px; float: right;"><a href="/auth/logout">Logout</a></h1>
+                <h1 id="info" style="margin: 10px; clear:both;"></h1>
+            </div>
             <div class = "input">
                 <p>Name:</p>
                 <input id="newroomname" type="text" name="name" placeholder="New room name" required><br><br>
@@ -21,13 +27,9 @@
                 <input id="newmessage" type="text" name="message" placeholder="Message" required><br><br>
                 <input id="create_message_btn" type="button" value="Create Message"> 
             </div>
-            <h1 style="margin: 1000;"><a href="/auth/logout">Logout</a></h1>
-            <h1 id="info"></h1>
-            <h1 style="margin: 1000;", id = "roomname"></h1>
-        </br></br>
         </div>
         
-        <div id="doors"> 
+        <div id="doors" style = "clear:both;"> 
             <p class="message"></p>
         </div>
     </body>
