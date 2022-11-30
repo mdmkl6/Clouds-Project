@@ -74,7 +74,7 @@ function new_message(): void {
         if (data && doors_div) {
           const div = document.createElement("div");
           div.classList.add("message");
-          div.innerHTML = `<p class="message">${newmessage.value}</p>`;
+          div.innerHTML = `<p>${newmessage.value}</p>`;
           doors_div.appendChild(div);
           clear_info();
         } else set_info("Error creating message");
